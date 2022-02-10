@@ -1,0 +1,623 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: transparent;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-start {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.flex-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.flex-sides {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-center-x {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-center-y {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-shrink-grow {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+}
+
+.gap1 {
+  gap: 0.25em;
+}
+
+.gap2 {
+  gap: 0.5em;
+}
+
+.gap3 {
+  gap: 0.75em;
+}
+
+.gap4 {
+  gap: 1em;
+}
+
+.p1 {
+  padding: 0.25em;
+}
+
+.p2 {
+  padding: 0.5em;
+}
+
+.p3 {
+  padding: 0.75em;
+}
+
+.p4 {
+  padding: 1em;
+}
+
+.p5 {
+  padding: 1.5em;
+}
+
+.p6 {
+  padding: 2em;
+}
+
+.px1 {
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+}
+
+.px2 {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.px3 {
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+}
+
+.px4 {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.px5 {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.px6 {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.pr6 {
+  padding-right: 2em;
+}
+
+.py1 {
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+}
+
+.py2 {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.py3 {
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+}
+
+.py4 {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.py5 {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+.py6 {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.border_primary {
+  border-color: whitesmoke;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.border_secondary {
+  border-color: #b3b3b3;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.bx1 {
+  border-color: black;
+  border-width: 0 1px;
+  border-style: solid;
+}
+
+.bx2 {
+  border-color: black;
+  border-width: 0 2px;
+  border-style: solid;
+}
+
+.by1 {
+  border-color: black;
+  border-width: 1px 0;
+  border-style: solid;
+}
+
+.bb1 {
+  border-color: black;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+}
+
+.mxauto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mb1 {
+  margin-bottom: 0.5em;
+}
+
+.mb2 {
+  margin-bottom: 1em;
+}
+
+.mb4 {
+  margin-bottom: 2em;
+}
+
+.mt1 {
+  margin-top: 0.5em;
+}
+
+.mt2 {
+  margin-top: 1em;
+}
+
+.fs1 {
+  font-size: 0.5rem;
+}
+
+.fs2 {
+  font-size: 0.75rem;
+}
+
+.fs3 {
+  font-size: 1rem;
+}
+
+.fs4 {
+  font-size: 1.25rem;
+}
+
+.fs5 {
+  font-size: 1.5rem;
+}
+
+.fs6 {
+  font-size: 2rem;
+}
+
+.lh1 {
+  line-height: 1;
+}
+
+.lh2 {
+  line-height: 1.2;
+}
+
+.lh3 {
+  line-height: 2;
+}
+
+.bg_primary {
+  background-color: whitesmoke;
+}
+
+.bg_black {
+  background-color: black;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.w80 {
+  width: 80%;
+}
+
+.w75 {
+  width: 75%;
+}
+
+.w50 {
+  width: 50%;
+}
+
+.w25 {
+  width: 25%;
+}
+
+.w20 {
+  min-width: 20%;
+}
+
+.w10 {
+  width: 10%;
+}
+
+.vw20 {
+  width: 20vw;
+}
+
+.vh80 {
+  min-height: 80vh;
+}
+
+.vh90 {
+  min-height: 90vh;
+}
+
+.vh100 {
+  min-height: 100vh;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.br1 {
+  border-radius: 0.25em;
+}
+
+.br2 {
+  border-radius: 0.5em;
+}
+
+.br3 {
+  border-radius: 0.75em;
+}
+
+.br4 {
+  border-radius: 1em;
+}
+
+.br5 {
+  border-radius: 1.5em;
+}
+
+.br6 {
+  border-radius: 2em;
+}
+
+.br9 {
+  border-radius: 5em;
+}
+
+.form {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.icon__search {
+  background-image: url("../images/magnifying-glass-solid.svg");
+}
+
+.icon__bag {
+  background-image: url("../images/bag-shopping-solid.svg");
+}
+
+.icon__chevron_down {
+  background-image: url("../images/chevron-down-solid.svg");
+}
+
+.icon__chevron_up {
+  background-image: url("../images/chevron-up-solid.svg");
+}
+
+.icon__star {
+  background-image: url("../images/star-solid.svg");
+}
+
+.icon__bars {
+  background-image: url("../images/bars-solid.svg");
+}
+
+.bg_no-repeat {
+  background-repeat: no-repeat;
+}
+
+.bg_size_contain {
+  background-size: contain;
+}
+
+.bg_size_half {
+  background-size: auto 50%;
+}
+
+.bg_position_left_center {
+  background-position-x: 0.75em;
+  background-position-y: 50%;
+}
+
+.bg_position_center {
+  background-position-x: 50%;
+  background-position-y: 50%;
+}
+
+.black {
+  color: black;
+}
+
+.white {
+  color: white;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.position_relative {
+  position: relative;
+}
+
+.position_absolute {
+  position: absolute;
+}
+
+.zindex100 {
+  z-index: 100;
+}
+
+.vis_hidden {
+  visibility: hidden;
+}
+
+.tooltip::before {
+  content: "Size guide";
+}
+
+.animate_bottom:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: -2px;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: black;
+  -webkit-transition: width 0.15s ease 0s, left 0.45s ease 0s;
+  transition: width 0.15s ease 0s, left 0.45s ease 0s;
+  width: 0;
+}
+
+.animate_bottom:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.box_shadow_1 {
+  -webkit-box-shadow: 0 0.25em 0.25em #e6e6e6;
+          box-shadow: 0 0.25em 0.25em #e6e6e6;
+}
+
+button.hover_light:hover {
+  background-color: #333333;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 1em;
+  height: 1em;
+  right: 0.5em;
+  top: 1em;
+  background-image: url("../images/chevron-down-solid.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+details[open]:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 1em;
+  height: 1em;
+  right: 0.5em;
+  top: 1em;
+  background-image: url("../images/chevron-up-solid.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.size2 {
+  width: 3em;
+  height: 3em;
+}
+
+.size5 {
+  width: 4.2em;
+  height: 0.75em;
+}
+
+.opacity20 {
+  opacity: 0.2;
+}
+
+.product {
+  width: 100%;
+}
+
+.mobile_nav {
+  display: block;
+  height: 1em;
+  width: 1em;
+}
+
+.main_nav {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  position: fixed;
+  top: 0%;
+  left: -100%;
+  width: 100%;
+  max-width: 250px;
+  height: 100vh;
+  z-index: 2;
+  padding: 1em;
+  background-color: #cccccc;
+}
+
+.main_nav ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main_nav[data-open] {
+  left: 0;
+}
+
+.minibasket {
+  height: 0;
+  margin-top: 2em;
+  right: 1em;
+  width: 15em;
+  background-color: whitesmoke;
+  opacity: 0;
+}
+
+.minibasket[data-open] {
+  opacity: 1;
+  height: auto;
+  -webkit-box-shadow: 0 0.25em 0.5em #999999;
+          box-shadow: 0 0.25em 0.5em #999999;
+}
+
+.minibasket[data-open] > div {
+  padding: 0.5em;
+}
+
+button[data-size]:hover,
+button[data-selected] {
+  background-color: #e6e6e6;
+  -webkit-box-shadow: 0 0 1em #abb5ba;
+          box-shadow: 0 0 1em #abb5ba;
+}
+
+@media screen and (min-width: 50em) {
+  .product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 80vw;
+  }
+  .product .image {
+    min-width: 50%;
+  }
+  .mobile_nav {
+    display: none;
+  }
+  .main_nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: static;
+    width: 100%;
+    max-width: none;
+    z-index: 2;
+    padding: 0;
+    background-color: transparent;
+    -webkit-transition: none;
+    transition: none;
+    height: auto;
+    left: auto;
+    top: auto;
+  }
+  .main_nav ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .second_row {
+    max-width: 80%;
+  }
+}

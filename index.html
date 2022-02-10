@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webdoctor Challenge</title>
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <script src="./script/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <section class="topHeader bg_primary flex flex-center-y flex-end p4">
+        <nav class="help_nav flex flex-end">
+          <ul class="flex">
+            <li class="px3">Help</li>
+            <li class="px3 bx2">Join Us</li>
+            <li class="px3">Sign In</li>
+          </ul>
+        </nav>
+        <div
+          data-mobile-nav-button
+          class="mobile_nav px5 icon__bars bg_size_contain bg_position_center bg_no-repeat pointer"
+        ></div>
+      </section>
+      <section class="second_row flex flex-end p4 mxauto mb4">
+        <nav
+          data-main-nav
+          class="main_nav flex flex-center-x flex-center-y w75"
+        >
+          <ul class="flex fs5">
+            <li class="position_relative animate_bottom py1 px2">
+              <a href="#">T-shirts</a>
+            </li>
+            <li class="position_relative animate_bottom py1 px2">
+              <a href="#">Men</a>
+            </li>
+            <li class="position_relative animate_bottom py1 px2">
+              <a href="#">Women</a>
+            </li>
+            <li class="position_relative animate_bottom py1 px2">
+              <a href="#">Sale</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="helpers flex flex-end py1 w100">
+          <div class="search w75">
+            <input
+              class="form w100 br6 bg_primary px6 py2 fs4 icon__search bg_no-repeat bg_size_half bg_position_left_center"
+              type="search"
+              placeholder="Search"
+            />
+          </div>
+          <div
+            data-minibasket-button
+            class="py4 basket icon__bag bg_size_half bg_position_center bg_no-repeat size2 pointer position_relative"
+          >
+            <div data-minibasket class="minibasket position_absolute"></div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main class="vh80">
+      <article class="product mxauto">
+        <div class="image px6 mb4">
+          <img src="./images/product.png" width="100%" alt="Product image" />
+        </div>
+        <div class="details px6">
+          <h1 class="title fs6">A nice T-shirt</h1>
+          <h3 class="fs4 py3">Men's T-shirt</h3>
+          <div class="price mb4">&euro;20</div>
+          <div class="py1 flex flex-sides bb1 mb1">
+            <div>Select size</div>
+            <div>Size guide</div>
+          </div>
+          <div class="sizes flex flex-wrap gap2">
+            <button
+              data-size="XS"
+              class="pointer w10 border_secondary flex-shrink-grow br2 py4 fs3"
+            >
+              XS
+            </button>
+            <button
+              data-size="S"
+              class="pointer w10 border_secondary flex-shrink-grow br2 py4 fs3"
+            >
+              S
+            </button>
+            <button
+              data-size="M"
+              class="pointer w10 border_secondary flex-shrink-grow br2 py4 fs3"
+            >
+              M
+            </button>
+            <button
+              data-size="L"
+              class="pointer w10 border_secondary flex-shrink-grow br2 py4 fs3"
+            >
+              L
+            </button>
+            <button
+              data-size="XL"
+              class="pointer w10 border_secondary flex-shrink-grow br2 py4 fs3"
+            >
+              XL
+            </button>
+            <button
+              data-size="XXL"
+              class="pointer w10 border_secondary flex-shrink-grow br2 py4 fs3"
+            >
+              XXL
+            </button>
+          </div>
+          <button
+            data-addtobasket-button
+            class="addtobag w100 br9 bg_black white p4 fs4 mt2 mb2 hover_light pointer"
+          >
+            Add to bag
+          </button>
+          <p class="product__description lh3 py3 fs3">
+            A really nice t-shirt that comes in one colour, black. Some more
+            description here about the t-shirt will convince you it is a good
+            purchase. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Provident, libero suscipit. Illo quia sequi natus eum nemo, corporis
+            doloribus sapiente.
+          </p>
+
+          <details class="py4 by1 position_relative">
+            <summary class="fs4 pointer">Size & fit</summary>
+            <p class="fs3 py2 px4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+              temporibus voluptas facere saepe optio vel consequatur quisquam at
+              veniam numquam veritatis, incidunt maxime esse cum officiis, quod,
+              nisi hic eveniet fugit qui. Incidunt aliquid a ullam corrupti et
+              deserunt autem, eius sunt explicabo cumque dignissimos iure ad
+              molestias fuga laboriosam?
+            </p>
+          </details>
+
+          <details class="py4 position_relative">
+            <summary class="fs4 pointer">Free delivery & returns</summary>
+            <p class="fs3 py2 px4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At illum
+              tempore ipsam amet fuga, velit voluptatem vitae minus deserunt
+              soluta.
+            </p>
+            <p class="fs3 py2 px4">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
+              maxime exercitationem velit voluptatem accusamus, recusandae
+              laboriosam cumque consectetur quasi blanditiis incidunt. Dicta ex,
+              quia ut repellat nesciunt iste excepturi vel magnam ipsum libero,
+              in, nulla modi debitis? Facilis nihil non, ea aliquid consequatur
+              magnam. Laborum hic quidem porro tempore eius.
+            </p>
+          </details>
+          <details class="py4 by1 position_relative">
+            <summary class="fs4 pointer flex flex-sides pr6">
+              Reviews (0)
+              <span
+                class="icon__star size5 inline-block bg_size_contain opacity20"
+              ></span>
+            </summary>
+            <p class="fs3 py2 px4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At illum
+              tempore ipsam amet fuga, velit voluptatem vitae minus deserunt
+              soluta.
+            </p>
+          </details>
+        </div>
+      </article>
+    </main>
+    <footer class="bg_primary p6 mt2"></footer>
+  </body>
+</html>

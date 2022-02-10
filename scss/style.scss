@@ -1,0 +1,543 @@
+// color vars
+$__color_primary: hsl(0, 0%, 96%);
+$__color_secondary: hsl(0, 0%, 70%);
+$__color_black: hsl(0, 0%, 0%);
+
+// sizes vars
+$__size_100: 0.25em;
+$__size_200: 0.5em;
+$__size_300: 0.75em;
+$__size_400: 1em;
+$__size_500: 1.5em;
+$__size_600: 2em;
+$__size_700: 3em;
+$__size_800: 4em;
+$__size_900: 5em;
+$__size_50p: 50%;
+
+//reset
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+  text-decoration: none;
+  color: $__color_black;
+  appearance: none;
+  background: transparent;
+}
+
+// block
+.block {
+  display: block;
+}
+.inline-block {
+  display: inline-block;
+}
+
+// flex
+.flex {
+  display: flex;
+}
+.flex-start {
+  justify-content: flex-start;
+}
+.flex-end {
+  justify-content: flex-end;
+}
+.flex-sides {
+  justify-content: space-between;
+}
+.flex-center-x {
+  justify-content: center;
+}
+.flex-center-y {
+  align-items: center;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-shrink-grow {
+  flex: 1 1;
+}
+
+// gaps
+.gap1 {
+  gap: $__size_100;
+}
+.gap2 {
+  gap: $__size_200;
+}
+.gap3 {
+  gap: $__size_300;
+}
+.gap4 {
+  gap: $__size_400;
+}
+
+// padding in X/Y axis
+.p1 {
+  padding: $__size_100;
+}
+.p2 {
+  padding: $__size_200;
+}
+.p3 {
+  padding: $__size_300;
+}
+.p4 {
+  padding: $__size_400;
+}
+.p5 {
+  padding: $__size_500;
+}
+.p6 {
+  padding: $__size_600;
+}
+
+//padding in X-axis
+.px1 {
+  padding-left: $__size_100;
+  padding-right: $__size_100;
+}
+.px2 {
+  padding-left: $__size_200;
+  padding-right: $__size_200;
+}
+.px3 {
+  padding-left: $__size_300;
+  padding-right: $__size_300;
+}
+.px4 {
+  padding-left: $__size_400;
+  padding-right: $__size_400;
+}
+.px5 {
+  padding-left: $__size_500;
+  padding-right: $__size_500;
+}
+.px6 {
+  padding-left: $__size_600;
+  padding-right: $__size_600;
+}
+
+.pr6 {
+  padding-right: $__size_600;
+}
+
+// padding in Y-axis
+.py1 {
+  padding-top: $__size_100;
+  padding-bottom: $__size_100;
+}
+.py2 {
+  padding-top: $__size_200;
+  padding-bottom: $__size_200;
+}
+.py3 {
+  padding-top: $__size_300;
+  padding-bottom: $__size_300;
+}
+.py4 {
+  padding-top: $__size_400;
+  padding-bottom: $__size_400;
+}
+.py5 {
+  padding-top: $__size_500;
+  padding-bottom: $__size_500;
+}
+.py6 {
+  padding-top: $__size_600;
+  padding-bottom: $__size_600;
+}
+
+// borders
+.border_primary {
+  border-color: $__color_primary;
+  border-width: 1px;
+  border-style: solid;
+}
+.border_secondary {
+  border-color: $__color_secondary;
+  border-width: 1px;
+  border-style: solid;
+}
+.bx1 {
+  border-color: $__color_black;
+  border-width: 0 1px;
+  border-style: solid;
+}
+.bx2 {
+  border-color: $__color_black;
+  border-width: 0 2px;
+  border-style: solid;
+}
+
+.by1 {
+  border-color: $__color_black;
+  border-width: 1px 0;
+  border-style: solid;
+}
+.bb1 {
+  border-color: $__color_black;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+}
+// margins
+.mxauto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.mb1 {
+  margin-bottom: $__size_200;
+}
+.mb2 {
+  margin-bottom: $__size_400;
+}
+.mb4 {
+  margin-bottom: $__size_600;
+}
+.mt1 {
+  margin-top: $__size_200;
+}
+.mt2 {
+  margin-top: $__size_400;
+}
+
+// font-sizes
+.fs1 {
+  font-size: 0.5rem;
+}
+.fs2 {
+  font-size: 0.75rem;
+}
+.fs3 {
+  font-size: 1rem;
+}
+.fs4 {
+  font-size: 1.25rem;
+}
+.fs5 {
+  font-size: 1.5rem;
+}
+.fs6 {
+  font-size: 2rem;
+}
+
+// line heights
+.lh1 {
+  line-height: 1;
+}
+.lh2 {
+  line-height: 1.2;
+}
+.lh3 {
+  line-height: 2;
+}
+
+// background colours
+.bg_primary {
+  background-color: $__color_primary;
+}
+.bg_black {
+  background-color: $__color_black;
+}
+// width & height
+.w100 {
+  width: 100%;
+}
+.w80 {
+  width: 80%;
+}
+.w75 {
+  width: 75%;
+}
+.w50 {
+  width: 50%;
+}
+.w25 {
+  width: 25%;
+}
+.w20 {
+  min-width: 20%;
+}
+.w10 {
+  width: 10%;
+}
+
+.vw20 {
+  width: 20vw;
+}
+.vh80 {
+  min-height: 80vh;
+}
+.vh90 {
+  min-height: 90vh;
+}
+.vh100 {
+  min-height: 100vh;
+}
+.h100 {
+  height: 100%;
+}
+// border-radius
+.br1 {
+  border-radius: $__size_100;
+}
+.br2 {
+  border-radius: $__size_200;
+}
+.br3 {
+  border-radius: $__size_300;
+}
+.br4 {
+  border-radius: $__size_400;
+}
+.br5 {
+  border-radius: $__size_500;
+}
+.br6 {
+  border-radius: $__size_600;
+}
+.br9 {
+  border-radius: $__size_900;
+}
+
+// form styles
+.form {
+  appearance: none;
+}
+
+// icons
+.icon__search {
+  background-image: url("../images/magnifying-glass-solid.svg");
+}
+
+.icon__bag {
+  background-image: url("../images/bag-shopping-solid.svg");
+}
+
+.icon__chevron_down {
+  background-image: url("../images/chevron-down-solid.svg");
+}
+
+.icon__chevron_up {
+  background-image: url("../images/chevron-up-solid.svg");
+}
+
+.icon__star {
+  background-image: url("../images/star-solid.svg");
+}
+
+.icon__bars {
+  background-image: url("../images/bars-solid.svg");
+}
+
+.bg_no-repeat {
+  background-repeat: no-repeat;
+}
+.bg_size_contain {
+  background-size: contain;
+}
+.bg_size_half {
+  background-size: auto 50%;
+}
+.bg_position_left_center {
+  background-position-x: $__size_300;
+  background-position-y: $__size_50p;
+}
+.bg_position_center {
+  background-position-x: $__size_50p;
+  background-position-y: $__size_50p;
+}
+
+// colors
+.black {
+  color: $__color_black;
+}
+.white {
+  color: hsl(0, 0%, 100%);
+}
+// cursors
+.pointer {
+  cursor: pointer;
+}
+
+// positions
+.position_relative {
+  position: relative;
+}
+.position_absolute {
+  position: absolute;
+}
+.zindex100 {
+  z-index: 100;
+}
+.vis_hidden {
+  visibility: hidden;
+}
+.tooltip::before {
+  content: "Size guide";
+}
+// hover
+.animate_bottom:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: -2px;
+  content: "";
+  display: block;
+  height: 2px;
+  left: $__size_50p;
+  position: absolute;
+  background: $__color_black;
+  transition: width 0.15s ease 0s, left 0.45s ease 0s;
+  width: 0;
+}
+.animate_bottom:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+//box-shadow
+.box_shadow_1 {
+  box-shadow: 0 $__size_100 $__size_100 hsl(0, 0%, 90%);
+}
+
+button.hover_light:hover {
+  background-color: hsl(0, 0%, 20%);
+}
+
+// details & summary
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: $__size_400;
+  height: $__size_400;
+  right: $__size_200;
+  top: $__size_400;
+  background-image: url("../images/chevron-down-solid.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+details[open]:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: $__size_400;
+  height: $__size_400;
+  right: $__size_200;
+  top: $__size_400;
+  background-image: url("../images/chevron-up-solid.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.size2 {
+  width: $__size_700;
+  height: $__size_700;
+}
+.size5 {
+  width: 4.2em;
+  height: 0.75em;
+}
+
+.opacity20 {
+  opacity: 0.2;
+}
+.product {
+  width: 100%;
+}
+.mobile_nav {
+  display: block;
+  height: 1em;
+  width: 1em;
+}
+.main_nav {
+  transition: all 0.5s ease-in-out;
+  position: fixed;
+  top: 0%;
+  left: -100%;
+  width: 100%;
+  max-width: 250px;
+  height: 100vh;
+  z-index: 2;
+  padding: $__size_400;
+  background-color: hsl(0, 0%, 80%);
+}
+
+.main_nav ul {
+  flex-direction: column;
+}
+
+.main_nav[data-open] {
+  left: 0;
+}
+
+.minibasket {
+  height: 0;
+  margin-top: 2em;
+  right: 1em;
+  width: 15em;
+  background-color: $__color_primary;
+  opacity: 0;
+}
+.minibasket[data-open] {
+  opacity: 1;
+  height: auto;
+  box-shadow: 0 $__size_100 $__size_200 hsl(0, 0%, 60%);
+}
+
+.minibasket[data-open] > div {
+  padding: $__size_200;
+}
+
+button[data-size]:hover,
+button[data-selected] {
+  background-color: hsl(0, 0%, 90%);
+  box-shadow: 0 0 $__size_400 hsl(200, 10%, 70%);
+}
+
+@media screen and (min-width: 50em) {
+  .product {
+    display: flex;
+    max-width: 80vw;
+    .image {
+      min-width: 50%;
+    }
+  }
+  .mobile_nav {
+    display: none;
+  }
+  .main_nav {
+    display: flex;
+    position: static;
+    width: 100%;
+    max-width: none;
+    z-index: 2;
+    padding: 0;
+    background-color: transparent;
+    transition: none;
+    height: auto;
+    left: auto;
+    top: auto;
+  }
+  .main_nav ul {
+    flex-direction: row;
+  }
+  .second_row {
+    max-width: 80%;
+  }
+}
